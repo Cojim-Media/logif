@@ -16,6 +16,8 @@ import Profile from 'navpages/Profile';
 import MemberPaymentList from 'navpages/MemberPaymentList';
 import MakePayment from 'navpages/MakePayment';
 import UnconfirmedPayments from 'navpages/UnconfirmedPayments';
+import GlobalPayReceipt from 'navpages/GlobalPayReceipt';
+import AdminSettings from 'navpages/AdminSettings';
 
 function App() {
   return (
@@ -31,12 +33,14 @@ function App() {
         <Route path="dashboard/" element={<DashboardLayout />}>
           <Route index element={<Overview />} />
           <Route path="overview" element={<Overview />} />
+          <Route path="settings" exact element={<AdminSettings />} />
           <Route path="members-list" element={<MembersList />} />
           <Route path="unconfirmed-payments" element={<UnconfirmedPayments />} />
           <Route path="profile" element={<Profile />} />
           <Route path="payment-list/:memberId" element={<MemberPaymentList />} />
           <Route path="make-payment" element={<MakePayment />} />
         </Route>
+        <Route path="/verify-globalpay" exact element={<GlobalPayReceipt />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
