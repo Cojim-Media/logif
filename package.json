@@ -1,5 +1,5 @@
 {
-  "name": "logim",
+  "name": "logif",
   "version": "0.1.0",
   "proxy": "https://logif-api.onrender.com",
   "private": true,
