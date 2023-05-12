@@ -316,7 +316,7 @@ const MembershipPaymentModalContent = () => {
                   <form
                     target="_blank"
                     className="py-6 px-9"
-                    action="https://demo.globalpay.com.ng/globalpay_demo/Paymentgatewaycapture.aspx"
+                    action="https://www.globalpay.com.ng/GlobalPayAPI/Paymentgatewaycapture.aspx"
                     method="POST"
                   >
                     <div className="mb-5">
